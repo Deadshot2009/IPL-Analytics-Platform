@@ -1,0 +1,22 @@
+# Ignore parent directories
+../../*
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Node
+node_modules/
+# OS files
+.DS_Store
+Thumbs.db
+.env
+# Build artifacts
+dist/
+build/
+# Logs
+*.log
+# Large data files to exclude from repository
+ipl_analytics.db
+ipl_analytics.db-*
+ipl_antigravity_bundle/data/**

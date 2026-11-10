@@ -1,0 +1,101 @@
+You are an expert full-stack engineer and data analyst. Build a complete, polished IPL Analytics web application using the attached IPL project data. Do not merely create a mockup: implement a working application with real data loading, filters, charts, tables, navigation, and clear error handling.
+
+PROJECT GOAL
+Create an IPL analytics platform that lets users explore the available IPL seasons, teams, players, matches, innings, venues, and match phases using the supplied cleaned and feature-engineered datasets plus Stage 4 insight tables. The data files are included in the `data/` folder as two ZIP archives:
+1. `IPL_Stage2_Integrated_Data.zip` — integrated cleaned data, match/delivery/player/scorecard tables and engineered analytics features.
+2. `IPL_Stage4_Insights_and_Visualizations.zip` — Stage 4 CSV insight tables, charts, Excel workbook, PDF report and validation report.
+
+IMPORTANT DATA RULES
+- First inspect both ZIP archives and their README/QA/validation files. Identify actual filenames, columns, data types, season coverage, row counts, nulls, and join keys before coding.
+- Do not assume a column name. Build a data dictionary/schema inspection step and map the actual columns.
+- Use the integrated Stage 2 data as the primary source for detailed exploration. Use Stage 4 CSVs for precomputed insight views and cross-check summaries where sensible.
+- Do not treat a season schedule as completed match results. A scheduled fixture without a result must not count as a played match, win, loss, score, or player performance.
+- Detect the actual season range from the data. Never claim coverage through 2026 unless the completed match data proves it. Show the available seasons accurately in the UI.
+- Do not fabricate missing values, teams, player stats, venues, scores, dates, results, or charts. Show “Not available” where data is absent.
+- Avoid double counting: deliveries are ball-level; scorecards are player/innings-level; matches are match-level. Aggregate at the correct grain and document definitions.
+- Handle super overs, no-results, ties, abandoned matches, DLS/revised targets, extras, and missing values carefully. Explain exclusions or special handling in tooltips/notes.
+- Keep source data unchanged. Do not overwrite the ZIP files.
+
+RECOMMENDED IMPLEMENTATION
+Build a maintainable full-stack project:
+- Frontend: React + Vite, TypeScript if practical, responsive CSS/Tailwind, Recharts (or another maintained chart library).
+- Backend: Python FastAPI + Pandas (and PyArrow only if Parquet support is needed).
+- Local development must work without cloud credentials or paid APIs.
+- If a simpler stack is materially more reliable in this environment, explain the choice and still deliver a working local web app.
+- Extract/prepare data into a predictable local `backend/data/` location at startup or via a documented setup script. Do not require users to manually edit absolute paths.
+- Add caching for expensive aggregations and avoid loading the full ball-by-ball dataset repeatedly for every UI interaction.
+
+REQUIRED PAGES / FEATURES
+1. OVERVIEW DASHBOARD
+   - KPI cards: played matches, seasons, teams, players, venues (only if supported by data).
+   - Season filter and optional team filter.
+   - Season trend charts: matches, average first-innings score, run rate, or other valid metrics supported by columns.
+   - Clearly label each metric and its denominator.
+
+2. TEAM ANALYSIS
+   - Team-wise wins/losses/no-results and win percentage with a clearly defined denominator.
+   - Season-wise team performance and comparison.
+   - Batting first vs chasing outcomes if supported by match result fields.
+   - Team comparison selector and readable charts/tables.
+
+3. PLAYER ANALYSIS
+   - Batting leaderboard: runs, innings/matches, average, strike rate, 50s/100s if derivable.
+   - Bowling leaderboard: wickets, overs, runs conceded, economy, average, strike rate if derivable.
+   - Player detail view with season-wise performance and filters.
+   - Do not mix incompatible formats or count a player multiple times incorrectly.
+   - Clearly explain qualification rules for leaderboards; allow user to change minimum innings/overs when possible.
+
+4. MATCH EXPLORER
+   - Search/filter by season, team, opponent, venue, date, and result where available.
+   - Match list with score summary and result.
+   - Match detail page with innings scorecards and ball-by-ball/over summaries when available.
+   - Handle missing scorecard or delivery detail gracefully.
+
+5. VENUE ANALYSIS
+   - Venue-wise matches, average first-innings score, highest/lowest supported scores, and batting-first/chasing outcomes where data supports them.
+   - Make sample size visible; warn for low-sample venues.
+
+6. PHASE / SITUATION ANALYSIS
+   - Powerplay, middle overs, and death overs using the existing engineered phase definitions if present.
+   - Display runs, wickets, run rate, and sample counts only when derivable.
+   - State exact over ranges based on the source feature definitions; do not silently impose different ranges.
+
+7. STAGE 4 INSIGHTS
+   - Use Stage 4 CSVs for season trends, player leaderboards/consistency, team performance, phase performance, venue scoring, chase-vs-defend and first-innings-score vs chase-success views.
+   - Add explanations in plain language, but do not make causal claims from descriptive statistics.
+
+GLOBAL UX REQUIREMENTS
+- Professional cricket analytics visual style: dark navy/charcoal background with restrained accent colors, high contrast, clean typography, subtle cards, responsive layout.
+- Sidebar or top navigation with Overview, Teams, Players, Matches, Venues, Phase Analysis, Insights, About/Data.
+- Global season/team filters where logically applicable; reset filters control.
+- Search, sorting, pagination for long tables.
+- Loading, empty, and error states; no broken pages if a dataset is missing.
+- Charts need titles, axis labels, units, legends, hover tooltips and accessible colors.
+- Use Indian number formatting only if applied consistently; otherwise use standard comma separators.
+- Add a “Data & Methodology” page describing source tables, aggregation logic, limitations, and actual coverage.
+
+BACKEND / API
+- Create typed API endpoints for overview KPIs, seasons, teams, players, matches, venues, phase metrics, and Stage 4 insight tables.
+- Validate query parameters and return useful error messages.
+- Keep aggregation logic in reusable service modules, not inside route handlers.
+- Add basic tests for critical aggregation logic (match counts, team wins, batting/bowling totals, season filtering).
+
+DELIVERABLES
+- Complete source code with clean folder structure.
+- `README.md` with exact Windows setup commands (PowerShell and/or CMD), prerequisites, install, run, and troubleshooting.
+- `requirements.txt` and frontend `package.json`.
+- `.env.example` only if environment variables are actually needed; never include secrets.
+- Data loading/validation script that reports discovered files, schemas, row counts, and missing columns.
+- A working local app, not just static screenshots.
+- If possible, include screenshots of the finished pages and a short list of implemented features.
+
+WORK PROCESS — FOLLOW THIS ORDER
+A. Inspect both archives and write a concise data inventory before building.
+B. Identify reliable join keys and grains; document any ambiguity rather than guessing.
+C. Build and test backend data loading and aggregation first.
+D. Build frontend pages and connect them to real API endpoints.
+E. Run the app and fix runtime/build errors. Test every page and filter with actual data.
+F. Provide exact commands to start backend and frontend on Windows.
+G. At the end, report what is implemented, what is unavailable due to source data, and any known limitations.
+
+Do not stop after generating a plan. Continue implementing the complete working application. If a decision is blocked by missing information, choose the safest data-grounded default, document it, and proceed.

@@ -1,0 +1,3875 @@
+{
+  "base/batter_scorecard.csv": {
+    "rows": 18837,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335982",
+          "335982"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-18"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "M Chinnaswamy Stadium",
+          "M Chinnaswamy Stadium",
+          "M Chinnaswamy Stadium"
+        ]
+      },
+      {
+        "name": "city",
+        "dtype": "str",
+        "sample_values": [
+          "Bangalore",
+          "Bangalore",
+          "Bangalore"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "batting_team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders"
+        ]
+      },
+      {
+        "name": "bowling_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "batting_position",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "batter",
+        "dtype": "str",
+        "sample_values": [
+          "SC Ganguly",
+          "BB McCullum",
+          "RT Ponting"
+        ]
+      },
+      {
+        "name": "entry_score",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "61"
+        ]
+      },
+      {
+        "name": "entry_wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "entry_over",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "6"
+        ]
+      },
+      {
+        "name": "entry_bowler",
+        "dtype": "str",
+        "sample_values": [
+          "P Kumar",
+          "P Kumar",
+          "Z Khan"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "10",
+          "158",
+          "20"
+        ]
+      },
+      {
+        "name": "total_balls_faced",
+        "dtype": "int64",
+        "sample_values": [
+          "12",
+          "73",
+          "20"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "2",
+          "10",
+          "1"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "13",
+          "1"
+        ]
+      },
+      {
+        "name": "strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "83.33",
+          "216.44",
+          "100.0"
+        ]
+      },
+      {
+        "name": "runs_after_5_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "0.0",
+          "0.0",
+          "1.0"
+        ]
+      },
+      {
+        "name": "runs_after_10_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "10.0",
+          "18.0",
+          "7.0"
+        ]
+      },
+      {
+        "name": "runs_after_20_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "41.0",
+          "20.0",
+          "26.0"
+        ]
+      },
+      {
+        "name": "runs_after_30_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "47.0",
+          "48.0",
+          "70.0"
+        ]
+      },
+      {
+        "name": "runs_after_40_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "67.0",
+          "68.0",
+          "54.0"
+        ]
+      },
+      {
+        "name": "runs_after_50_balls",
+        "dtype": "float64",
+        "sample_values": [
+          "89.0",
+          "100.0",
+          "108.0"
+        ]
+      },
+      {
+        "name": "out",
+        "dtype": "bool",
+        "sample_values": [
+          "True",
+          "False",
+          "True"
+        ]
+      },
+      {
+        "name": "dismissal_kind",
+        "dtype": "str",
+        "sample_values": [
+          "caught",
+          "caught",
+          "caught"
+        ]
+      },
+      {
+        "name": "dismissal_bowler",
+        "dtype": "str",
+        "sample_values": [
+          "Z Khan",
+          "JH Kallis",
+          "AA Noffke"
+        ]
+      },
+      {
+        "name": "dismissal_fielder",
+        "dtype": "str",
+        "sample_values": [
+          "JH Kallis",
+          "P Kumar",
+          "CL White"
+        ]
+      },
+      {
+        "name": "boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "8",
+          "118",
+          "10"
+        ]
+      },
+      {
+        "name": "non_boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "2",
+          "40",
+          "10"
+        ]
+      },
+      {
+        "name": "boundary_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "80.0",
+          "74.68",
+          "50.0"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage_est",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "balls_per_boundary",
+        "dtype": "float64",
+        "sample_values": [
+          "6.0",
+          "3.17",
+          "10.0"
+        ]
+      },
+      {
+        "name": "runs_per_ball",
+        "dtype": "float64",
+        "sample_values": [
+          "0.833",
+          "2.164",
+          "1.0"
+        ]
+      },
+      {
+        "name": "calculated_strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "83.3",
+          "216.4",
+          "100.0"
+        ]
+      },
+      {
+        "name": "boundary_count",
+        "dtype": "int64",
+        "sample_values": [
+          "2",
+          "23",
+          "2"
+        ]
+      },
+      {
+        "name": "dismissed_flag",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "not_out_flag",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "entry_phase",
+        "dtype": "str",
+        "sample_values": [
+          "Powerplay",
+          "Powerplay",
+          "Powerplay"
+        ]
+      },
+      {
+        "name": "high_impact_30_plus",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "half_century_flag",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "century_flag",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "season_player_key",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08|SC Ganguly",
+          "2007/08|BB McCullum",
+          "2007/08|RT Ponting"
+        ]
+      }
+    ]
+  },
+  "base/bowler_scorecard.csv": {
+    "rows": 14734,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335982",
+          "335982"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-18"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "M Chinnaswamy Stadium",
+          "M Chinnaswamy Stadium",
+          "M Chinnaswamy Stadium"
+        ]
+      },
+      {
+        "name": "city",
+        "dtype": "str",
+        "sample_values": [
+          "Bangalore",
+          "Bangalore",
+          "Bangalore"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "batting_team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders"
+        ]
+      },
+      {
+        "name": "bowling_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "bowler",
+        "dtype": "str",
+        "sample_values": [
+          "AA Noffke",
+          "CL White",
+          "JH Kallis"
+        ]
+      },
+      {
+        "name": "balls",
+        "dtype": "int64",
+        "sample_values": [
+          "24",
+          "6",
+          "24"
+        ]
+      },
+      {
+        "name": "overs",
+        "dtype": "float64",
+        "sample_values": [
+          "4.0",
+          "1.0",
+          "4.0"
+        ]
+      },
+      {
+        "name": "runs",
+        "dtype": "int64",
+        "sample_values": [
+          "40",
+          "24",
+          "48"
+        ]
+      },
+      {
+        "name": "extras",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "name": "wides",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "name": "noballs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "fours_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "2",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "name": "sixes_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "2",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "7",
+          "0",
+          "9"
+        ]
+      },
+      {
+        "name": "maidens",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "economy_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "10.0",
+          "24.0",
+          "12.0"
+        ]
+      },
+      {
+        "name": "strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "24.0",
+          "24.0",
+          "24.0"
+        ]
+      },
+      {
+        "name": "wickets_caught",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "wickets_caught_and_bowled",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "wickets_bowled",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "wickets_lbw",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "wickets_stumped",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "wickets_hit_wicket",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "run_outs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "19",
+          "4",
+          "23"
+        ]
+      },
+      {
+        "name": "overs_calculated",
+        "dtype": "float64",
+        "sample_values": [
+          "3.1",
+          "0.4",
+          "3.5"
+        ]
+      },
+      {
+        "name": "economy_calculated",
+        "dtype": "float64",
+        "sample_values": [
+          "12.63",
+          "36.0",
+          "12.52"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "36.84",
+          "0.0",
+          "39.13"
+        ]
+      },
+      {
+        "name": "boundary_runs_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "20",
+          "20",
+          "38"
+        ]
+      },
+      {
+        "name": "boundary_percentage_of_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "50.0",
+          "83.33",
+          "79.17"
+        ]
+      },
+      {
+        "name": "balls_per_wicket",
+        "dtype": "float64",
+        "sample_values": [
+          "19.0",
+          "23.0",
+          "24.0"
+        ]
+      },
+      {
+        "name": "runs_per_wicket",
+        "dtype": "float64",
+        "sample_values": [
+          "40.0",
+          "48.0",
+          "38.0"
+        ]
+      },
+      {
+        "name": "wicket_flag",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "three_wicket_haul",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "four_wicket_haul",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "base/deliveries.csv": {
+    "rows": 295732,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "1082591",
+          "1082591",
+          "1082591"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2017-04-05",
+          "2017-04-05",
+          "2017-04-05"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "Rajiv Gandhi International Stadium, Uppal",
+          "Rajiv Gandhi International Stadium, Uppal",
+          "Rajiv Gandhi International Stadium, Uppal"
+        ]
+      },
+      {
+        "name": "city",
+        "dtype": "str",
+        "sample_values": [
+          "Hyderabad",
+          "Hyderabad",
+          "Hyderabad"
+        ]
+      },
+      {
+        "name": "team1",
+        "dtype": "str",
+        "sample_values": [
+          "Sunrisers Hyderabad",
+          "Sunrisers Hyderabad",
+          "Sunrisers Hyderabad"
+        ]
+      },
+      {
+        "name": "team2",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "int64",
+        "sample_values": [
+          "2017",
+          "2017",
+          "2017"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "batting_team",
+        "dtype": "str",
+        "sample_values": [
+          "Sunrisers Hyderabad",
+          "Sunrisers Hyderabad",
+          "Sunrisers Hyderabad"
+        ]
+      },
+      {
+        "name": "bowling_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore"
+        ]
+      },
+      {
+        "name": "over",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "ball",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "batter",
+        "dtype": "str",
+        "sample_values": [
+          "DA Warner",
+          "DA Warner",
+          "DA Warner"
+        ]
+      },
+      {
+        "name": "bowler",
+        "dtype": "str",
+        "sample_values": [
+          "TS Mills",
+          "TS Mills",
+          "TS Mills"
+        ]
+      },
+      {
+        "name": "non_striker",
+        "dtype": "str",
+        "sample_values": [
+          "S Dhawan",
+          "S Dhawan",
+          "S Dhawan"
+        ]
+      },
+      {
+        "name": "batter_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "4"
+        ]
+      },
+      {
+        "name": "extras_total",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "4"
+        ]
+      },
+      {
+        "name": "wides",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "noballs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "byes",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "legbyes",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "penalty",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "is_wicket",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "is_retired",
+        "dtype": "float64",
+        "sample_values": [
+          "0.0",
+          "0.0",
+          "0.0"
+        ]
+      },
+      {
+        "name": "player_out",
+        "dtype": "str",
+        "sample_values": [
+          "DA Warner",
+          "S Dhawan",
+          "MC Henriques"
+        ]
+      },
+      {
+        "name": "dismissal_kind",
+        "dtype": "str",
+        "sample_values": [
+          "caught",
+          "caught",
+          "caught"
+        ]
+      },
+      {
+        "name": "fielder",
+        "dtype": "str",
+        "sample_values": [
+          "Mandeep Singh",
+          "Sachin Baby",
+          "Sachin Baby"
+        ]
+      },
+      {
+        "name": "sub_type",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "sub_in",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "sub_out",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "sub_reason",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "sub_role",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "legal_delivery",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "batter_ball_faced",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "boundary_4",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "boundary_6",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "4"
+        ]
+      },
+      {
+        "name": "phase",
+        "dtype": "str",
+        "sample_values": [
+          "Powerplay",
+          "Powerplay",
+          "Powerplay"
+        ]
+      },
+      {
+        "name": "is_dot_ball",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "wicket_excluding_runout",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "base/ipl_2026_schedule.csv": {
+    "rows": 74,
+    "cols": [
+      {
+        "name": "match_no",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2026-03-28",
+          "2026-03-29",
+          "2026-03-30"
+        ]
+      },
+      {
+        "name": "day",
+        "dtype": "str",
+        "sample_values": [
+          "Sat",
+          "Sun",
+          "Mon"
+        ]
+      },
+      {
+        "name": "start_time",
+        "dtype": "str",
+        "sample_values": [
+          "7:30 PM",
+          "7:30 PM",
+          "7:30 PM"
+        ]
+      },
+      {
+        "name": "home_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bengaluru",
+          "Mumbai Indians",
+          "Rajasthan Royals"
+        ]
+      },
+      {
+        "name": "away_team",
+        "dtype": "str",
+        "sample_values": [
+          "Sunrisers Hyderabad",
+          "Kolkata Knight Riders",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "Bengaluru",
+          "Mumbai",
+          "Guwahati"
+        ]
+      }
+    ]
+  },
+  "base/matches.csv": {
+    "rows": 1243,
+    "cols": [
+      {
+        "name": "filename",
+        "dtype": "str",
+        "sample_values": [
+          "335982.yaml",
+          "335983.yaml",
+          "335984.yaml"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "match_number",
+        "dtype": "float64",
+        "sample_values": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-19",
+          "2008-04-19"
+        ]
+      },
+      {
+        "name": "team1",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Kings XI Punjab",
+          "Delhi Daredevils"
+        ]
+      },
+      {
+        "name": "team2",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Chennai Super Kings",
+          "Rajasthan Royals"
+        ]
+      },
+      {
+        "name": "city",
+        "dtype": "str",
+        "sample_values": [
+          "Bangalore",
+          "Chandigarh",
+          "Delhi"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "M Chinnaswamy Stadium",
+          "Punjab Cricket Association Stadium, Mohali",
+          "Feroz Shah Kotla"
+        ]
+      },
+      {
+        "name": "neutral_venue",
+        "dtype": "float64",
+        "sample_values": [
+          "1.0",
+          "1.0",
+          "1.0"
+        ]
+      },
+      {
+        "name": "toss_winner",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Chennai Super Kings",
+          "Rajasthan Royals"
+        ]
+      },
+      {
+        "name": "toss_decision",
+        "dtype": "str",
+        "sample_values": [
+          "field",
+          "bat",
+          "bat"
+        ]
+      },
+      {
+        "name": "winner",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Chennai Super Kings",
+          "Delhi Daredevils"
+        ]
+      },
+      {
+        "name": "win_type",
+        "dtype": "str",
+        "sample_values": [
+          "runs",
+          "runs",
+          "wickets"
+        ]
+      },
+      {
+        "name": "win_margin",
+        "dtype": "float64",
+        "sample_values": [
+          "140.0",
+          "33.0",
+          "9.0"
+        ]
+      },
+      {
+        "name": "result",
+        "dtype": "str",
+        "sample_values": [
+          "tie",
+          "tie",
+          "no result"
+        ]
+      },
+      {
+        "name": "method",
+        "dtype": "str",
+        "sample_values": [
+          "D/L",
+          "D/L",
+          "D/L"
+        ]
+      },
+      {
+        "name": "eliminator",
+        "dtype": "str",
+        "sample_values": [
+          "Rajasthan Royals",
+          "Kings XI Punjab",
+          "Sunrisers Hyderabad"
+        ]
+      },
+      {
+        "name": "player_of_match",
+        "dtype": "str",
+        "sample_values": [
+          "BB McCullum",
+          "MEK Hussey",
+          "MF Maharoof"
+        ]
+      },
+      {
+        "name": "umpire1",
+        "dtype": "str",
+        "sample_values": [
+          "Asad Rauf",
+          "MR Benson",
+          "Aleem Dar"
+        ]
+      },
+      {
+        "name": "umpire2",
+        "dtype": "str",
+        "sample_values": [
+          "RE Koertzen",
+          "SL Shastri",
+          "GA Pratapkumar"
+        ]
+      },
+      {
+        "name": "event_stage",
+        "dtype": "str",
+        "sample_values": [
+          "Semi Final",
+          "Semi Final",
+          "Final"
+        ]
+      },
+      {
+        "name": "target_overs",
+        "dtype": "float64",
+        "sample_values": [
+          "20.0",
+          "20.0",
+          "20.0"
+        ]
+      },
+      {
+        "name": "target_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "223.0",
+          "241.0",
+          "130.0"
+        ]
+      },
+      {
+        "name": "match_referee",
+        "dtype": "str",
+        "sample_values": [
+          "J Srinath",
+          "S Venkataraghavan",
+          "GR Viswanath"
+        ]
+      },
+      {
+        "name": "tv_umpire",
+        "dtype": "str",
+        "sample_values": [
+          "AM Saheba",
+          "RB Tiffin",
+          "IL Howell"
+        ]
+      },
+      {
+        "name": "reserve_umpire",
+        "dtype": "str",
+        "sample_values": [
+          "VN Kulkarni",
+          "MSS Ranawat",
+          "SN Bandekar"
+        ]
+      },
+      {
+        "name": "team1_impact_in",
+        "dtype": "str",
+        "sample_values": [
+          "TU Deshpande",
+          "R Dhawan",
+          "K Gowtham"
+        ]
+      },
+      {
+        "name": "team1_impact_out",
+        "dtype": "str",
+        "sample_values": [
+          "AT Rayudu",
+          "PBB Rajapaksa",
+          "A Badoni"
+        ]
+      },
+      {
+        "name": "team2_impact_in",
+        "dtype": "str",
+        "sample_values": [
+          "B Sai Sudharsan",
+          "VR Iyer",
+          "Aman Hakim Khan"
+        ]
+      },
+      {
+        "name": "team2_impact_out",
+        "dtype": "str",
+        "sample_values": [
+          "KS Williamson",
+          "CV Varun",
+          "KK Ahmed"
+        ]
+      },
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335983",
+          "335984"
+        ]
+      },
+      {
+        "name": "innings_1_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "222.0",
+          "240.0",
+          "129.0"
+        ]
+      },
+      {
+        "name": "innings_2_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "82.0",
+          "207.0",
+          "132.0"
+        ]
+      },
+      {
+        "name": "innings_3_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "15.0",
+          "9.0",
+          "20.0"
+        ]
+      },
+      {
+        "name": "innings_4_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "18.0",
+          "10.0",
+          "15.0"
+        ]
+      },
+      {
+        "name": "innings_5_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "11.0"
+        ]
+      },
+      {
+        "name": "innings_6_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "15.0"
+        ]
+      },
+      {
+        "name": "first_innings_score",
+        "dtype": "float64",
+        "sample_values": [
+          "222.0",
+          "240.0",
+          "129.0"
+        ]
+      },
+      {
+        "name": "second_innings_score",
+        "dtype": "float64",
+        "sample_values": [
+          "82.0",
+          "207.0",
+          "132.0"
+        ]
+      },
+      {
+        "name": "run_difference_innings",
+        "dtype": "float64",
+        "sample_values": [
+          "140.0",
+          "33.0",
+          "3.0"
+        ]
+      },
+      {
+        "name": "chase_target",
+        "dtype": "float64",
+        "sample_values": [
+          "223.0",
+          "241.0",
+          "130.0"
+        ]
+      },
+      {
+        "name": "chase_result_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "-141.0",
+          "-34.0",
+          "2.0"
+        ]
+      },
+      {
+        "name": "toss_winner_won_match",
+        "dtype": "object",
+        "sample_values": [
+          "False",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "name": "toss_decision_bat_first",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "is_no_result_or_tie",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "base/match_players.csv": {
+    "rows": 27909,
+    "cols": [
+      {
+        "name": "filename",
+        "dtype": "str",
+        "sample_values": [
+          "335982.yaml",
+          "335982.yaml",
+          "335982.yaml"
+        ]
+      },
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders"
+        ]
+      },
+      {
+        "name": "player_name",
+        "dtype": "str",
+        "sample_values": [
+          "AB Agarkar",
+          "AB Dinda",
+          "BB McCullum"
+        ]
+      },
+      {
+        "name": "player_id",
+        "dtype": "str",
+        "sample_values": [
+          "fa463154",
+          "66b30f71",
+          "b8a55852"
+        ]
+      }
+    ]
+  },
+  "base/people.csv": {
+    "rows": 17851,
+    "cols": [
+      {
+        "name": "identifier",
+        "dtype": "str",
+        "sample_values": [
+          "b4a23876",
+          "482762af",
+          "4b0e3049"
+        ]
+      },
+      {
+        "name": "name",
+        "dtype": "str",
+        "sample_values": [
+          "AAA Amsterdam",
+          "AA Adeoye",
+          "AA Alleyne"
+        ]
+      },
+      {
+        "name": "unique_name",
+        "dtype": "str",
+        "sample_values": [
+          "AAA Amsterdam",
+          "AA Adeoye",
+          "AA Alleyne"
+        ]
+      },
+      {
+        "name": "key_bcci",
+        "dtype": "str",
+        "sample_values": [
+          "i0X1KhUIJLIzQOiJAiebGCiVyJJeiOc",
+          "KVGiiAJbJeyiJCIeiXLzJ1OcO0UihIQ",
+          "0bcII1ihOXJJiQzCeLUiKiVOJAeyGJi"
+        ]
+      },
+      {
+        "name": "key_bcci_2",
+        "dtype": "str",
+        "sample_values": [
+          "JiKiGIeIUAV0hzOiiLQJ1XycCJbJOei"
+        ]
+      },
+      {
+        "name": "key_bigbash",
+        "dtype": "float64",
+        "sample_values": [
+          "3241.0",
+          "5358.0",
+          "11091.0"
+        ]
+      },
+      {
+        "name": "key_cricbuzz",
+        "dtype": "float64",
+        "sample_values": [
+          "7625.0"
+        ]
+      },
+      {
+        "name": "key_cricheroes",
+        "dtype": "float64",
+        "sample_values": [
+          "3520831.0",
+          "9130435.0",
+          "9067582.0"
+        ]
+      },
+      {
+        "name": "key_crichq",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "key_cricinfo",
+        "dtype": "float64",
+        "sample_values": [
+          "772407.0",
+          "380588.0",
+          "661441.0"
+        ]
+      },
+      {
+        "name": "key_cricinfo_2",
+        "dtype": "float64",
+        "sample_values": [
+          "1048889.0",
+          "1241315.0",
+          "1193008.0"
+        ]
+      },
+      {
+        "name": "key_cricinfo_3",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "key_cricingif",
+        "dtype": "float64",
+        "sample_values": [
+          "13732.0",
+          "23724.0",
+          "15886.0"
+        ]
+      },
+      {
+        "name": "key_cricketarchive",
+        "dtype": "float64",
+        "sample_values": [
+          "1512811.0",
+          "2010.0",
+          "2034983.0"
+        ]
+      },
+      {
+        "name": "key_cricketarchive_2",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "key_cricketworld",
+        "dtype": "float64",
+        "sample_values": [
+          "120019.0",
+          "94563.0",
+          "53007.0"
+        ]
+      },
+      {
+        "name": "key_nvplay",
+        "dtype": "str",
+        "sample_values": [
+          "336f1b69-2fc6-43be-bbaf-2e7669ee3810",
+          "0ad52976-7c00-4704-95a8-f6e267ec7646",
+          "98fc9551-7bfd-4070-a522-7d8ff40661dd"
+        ]
+      },
+      {
+        "name": "key_nvplay_2",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "key_opta",
+        "dtype": "float64",
+        "sample_values": [
+          "3006.0",
+          "17108.0",
+          "5495.0"
+        ]
+      },
+      {
+        "name": "key_opta_2",
+        "dtype": "float64",
+        "sample_values": []
+      },
+      {
+        "name": "key_pulse",
+        "dtype": "float64",
+        "sample_values": [
+          "18542.0",
+          "138.0",
+          "1562.0"
+        ]
+      },
+      {
+        "name": "key_pulse_2",
+        "dtype": "float64",
+        "sample_values": [
+          "2691.0"
+        ]
+      }
+    ]
+  },
+  "base/squads.csv": {
+    "rows": 257,
+    "cols": [
+      {
+        "name": "name",
+        "dtype": "str",
+        "sample_values": [
+          "Axar Patel",
+          "Abishek Porel",
+          "Auqib Nabi"
+        ]
+      },
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Delhi Capitals",
+          "Delhi Capitals",
+          "Delhi Capitals"
+        ]
+      },
+      {
+        "name": "cricinfo_player_id",
+        "dtype": "int64",
+        "sample_values": [
+          "554691",
+          "1277545",
+          "1159732"
+        ]
+      },
+      {
+        "name": "url",
+        "dtype": "str",
+        "sample_values": [
+          "https://www.espncricinfo.com/cricketers/axar-patel-554691",
+          "https://www.espncricinfo.com/cricketers/abishek-porel-1277545",
+          "https://www.espncricinfo.com/cricketers/auqib-nabi-1159732"
+        ]
+      },
+      {
+        "name": "role",
+        "dtype": "str",
+        "sample_values": [
+          "Allrounder",
+          "Wicketkeeper Batter",
+          "Bowler"
+        ]
+      },
+      {
+        "name": "batting_style",
+        "dtype": "str",
+        "sample_values": [
+          "Left hand Bat",
+          "Left hand Bat",
+          "Right hand Bat"
+        ]
+      },
+      {
+        "name": "bowling_style",
+        "dtype": "str",
+        "sample_values": [
+          "Slow Left arm Orthodox",
+          "Right arm Medium",
+          "Right arm Fast"
+        ]
+      },
+      {
+        "name": "picture_url",
+        "dtype": "str",
+        "sample_values": [
+          "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/331100/331164.2.png",
+          "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/393400/393462.2.png",
+          "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/414800/414803.2.png"
+        ]
+      },
+      {
+        "name": "age",
+        "dtype": "int64",
+        "sample_values": [
+          "32",
+          "23",
+          "29"
+        ]
+      }
+    ]
+  },
+  "analytics/batting_features_player_season.csv": {
+    "rows": 2959,
+    "cols": [
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "batter",
+        "dtype": "str",
+        "sample_values": [
+          "A Chopra",
+          "A Kumble",
+          "A Mishra"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "name": "runs",
+        "dtype": "int64",
+        "sample_values": [
+          "42",
+          "13",
+          "37"
+        ]
+      },
+      {
+        "name": "balls_faced",
+        "dtype": "int64",
+        "sample_values": [
+          "52",
+          "17",
+          "42"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "dismissals",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "not_outs",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "2",
+          "0"
+        ]
+      },
+      {
+        "name": "fifties",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "hundreds",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "average_strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "62.5",
+          "85.725",
+          "72.3"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "name": "batting_average",
+        "dtype": "float64",
+        "sample_values": [
+          "8.4",
+          "6.5",
+          "12.33"
+        ]
+      },
+      {
+        "name": "strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "80.77",
+          "76.47",
+          "88.1"
+        ]
+      },
+      {
+        "name": "boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "20",
+          "4",
+          "12"
+        ]
+      },
+      {
+        "name": "boundary_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "47.62",
+          "30.77",
+          "32.43"
+        ]
+      }
+    ]
+  },
+  "analytics/bowling_features_player_season.csv": {
+    "rows": 2201,
+    "cols": [
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "bowler",
+        "dtype": "str",
+        "sample_values": [
+          "A Kumble",
+          "A Mishra",
+          "A Nehra"
+        ]
+      },
+      {
+        "name": "innings_bowled",
+        "dtype": "int64",
+        "sample_values": [
+          "10",
+          "6",
+          "14"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "10",
+          "6",
+          "14"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "220",
+          "116",
+          "258"
+        ]
+      },
+      {
+        "name": "runs_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "304",
+          "138",
+          "348"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "7",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "91",
+          "45",
+          "126"
+        ]
+      },
+      {
+        "name": "fours_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "27",
+          "4",
+          "47"
+        ]
+      },
+      {
+        "name": "sixes_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "14",
+          "8",
+          "8"
+        ]
+      },
+      {
+        "name": "maidens",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "economy",
+        "dtype": "float64",
+        "sample_values": [
+          "8.29",
+          "7.14",
+          "8.09"
+        ]
+      },
+      {
+        "name": "bowling_average",
+        "dtype": "float64",
+        "sample_values": [
+          "43.43",
+          "12.55",
+          "29.0"
+        ]
+      },
+      {
+        "name": "bowling_strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "31.43",
+          "10.55",
+          "21.5"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "41.36",
+          "38.79",
+          "48.84"
+        ]
+      }
+    ]
+  },
+  "analytics/match_innings_features.csv": {
+    "rows": 2514,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335982",
+          "335983"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-19"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "name": "batting_team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Royal Challengers Bangalore",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "bowling_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Kolkata Knight Riders",
+          "Kings XI Punjab"
+        ]
+      },
+      {
+        "name": "innings_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "222",
+          "82",
+          "240"
+        ]
+      },
+      {
+        "name": "batter_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "205",
+          "63",
+          "234"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "3",
+          "10",
+          "5"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "120",
+          "91",
+          "120"
+        ]
+      },
+      {
+        "name": "extras",
+        "dtype": "int64",
+        "sample_values": [
+          "17",
+          "19",
+          "6"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "15",
+          "3",
+          "20"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "14",
+          "3",
+          "16"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "36",
+          "50",
+          "34"
+        ]
+      },
+      {
+        "name": "overs",
+        "dtype": "float64",
+        "sample_values": [
+          "20.0",
+          "15.1",
+          "20.0"
+        ]
+      },
+      {
+        "name": "run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "11.1",
+          "5.41",
+          "12.0"
+        ]
+      },
+      {
+        "name": "boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "144",
+          "30",
+          "176"
+        ]
+      },
+      {
+        "name": "boundary_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "64.86",
+          "36.59",
+          "73.33"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "30.0",
+          "54.95",
+          "28.33"
+        ]
+      },
+      {
+        "name": "innings_complete_or_partial",
+        "dtype": "str",
+        "sample_values": [
+          "20-over-or-more",
+          "short/partial",
+          "20-over-or-more"
+        ]
+      }
+    ]
+  },
+  "analytics/match_phase_features.csv": {
+    "rows": 7338,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335982",
+          "335982"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-18"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "batting_team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders"
+        ]
+      },
+      {
+        "name": "bowling_team",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore"
+        ]
+      },
+      {
+        "name": "phase",
+        "dtype": "str",
+        "sample_values": [
+          "Death",
+          "Middle",
+          "Powerplay"
+        ]
+      },
+      {
+        "name": "runs",
+        "dtype": "int64",
+        "sample_values": [
+          "68",
+          "93",
+          "61"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "30",
+          "54",
+          "36"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "3",
+          "5",
+          "7"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "6",
+          "5",
+          "3"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "7",
+          "12",
+          "17"
+        ]
+      },
+      {
+        "name": "run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "13.6",
+          "10.33",
+          "10.17"
+        ]
+      },
+      {
+        "name": "economy_like_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "13.6",
+          "10.33",
+          "10.17"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "23.33",
+          "22.22",
+          "47.22"
+        ]
+      }
+    ]
+  },
+  "analytics/team_match_features.csv": {
+    "rows": 2514,
+    "cols": [
+      {
+        "name": "match_id",
+        "dtype": "int64",
+        "sample_values": [
+          "335982",
+          "335982",
+          "335983"
+        ]
+      },
+      {
+        "name": "date",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-19"
+        ]
+      },
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Royal Challengers Bangalore",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "opponent",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Kolkata Knight Riders",
+          "Kings XI Punjab"
+        ]
+      },
+      {
+        "name": "innings_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "222",
+          "82",
+          "240"
+        ]
+      },
+      {
+        "name": "batter_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "205",
+          "63",
+          "234"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "3",
+          "10",
+          "5"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "120",
+          "91",
+          "120"
+        ]
+      },
+      {
+        "name": "extras",
+        "dtype": "int64",
+        "sample_values": [
+          "17",
+          "19",
+          "6"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "15",
+          "3",
+          "20"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "14",
+          "3",
+          "16"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "36",
+          "50",
+          "34"
+        ]
+      },
+      {
+        "name": "overs",
+        "dtype": "float64",
+        "sample_values": [
+          "20.0",
+          "15.1",
+          "20.0"
+        ]
+      },
+      {
+        "name": "run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "11.1",
+          "5.41",
+          "12.0"
+        ]
+      },
+      {
+        "name": "boundary_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "144",
+          "30",
+          "176"
+        ]
+      },
+      {
+        "name": "boundary_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "64.86",
+          "36.59",
+          "73.33"
+        ]
+      },
+      {
+        "name": "dot_ball_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "30.0",
+          "54.95",
+          "28.33"
+        ]
+      },
+      {
+        "name": "innings_complete_or_partial",
+        "dtype": "str",
+        "sample_values": [
+          "20-over-or-more",
+          "short/partial",
+          "20-over-or-more"
+        ]
+      },
+      {
+        "name": "winner",
+        "dtype": "str",
+        "sample_values": [
+          "Kolkata Knight Riders",
+          "Kolkata Knight Riders",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "toss_winner",
+        "dtype": "str",
+        "sample_values": [
+          "Royal Challengers Bangalore",
+          "Royal Challengers Bangalore",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "toss_decision",
+        "dtype": "str",
+        "sample_values": [
+          "field",
+          "field",
+          "bat"
+        ]
+      },
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "M Chinnaswamy Stadium",
+          "M Chinnaswamy Stadium",
+          "Punjab Cricket Association Stadium, Mohali"
+        ]
+      },
+      {
+        "name": "city",
+        "dtype": "str",
+        "sample_values": [
+          "Bangalore",
+          "Bangalore",
+          "Chandigarh"
+        ]
+      },
+      {
+        "name": "date_meta",
+        "dtype": "str",
+        "sample_values": [
+          "2008-04-18",
+          "2008-04-18",
+          "2008-04-19"
+        ]
+      },
+      {
+        "name": "won_match",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "batting_first",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "won_batting_first",
+        "dtype": "int64",
+        "sample_values": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "won_chasing",
+        "dtype": "int64",
+        "sample_values": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "analytics/team_season_features.csv": {
+    "rows": 166,
+    "cols": [
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Chennai Super Kings",
+          "Deccan Chargers",
+          "Delhi Daredevils"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "16",
+          "14",
+          "14"
+        ]
+      },
+      {
+        "name": "wins",
+        "dtype": "int64",
+        "sample_values": [
+          "9",
+          "2",
+          "7"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "2520",
+          "2229",
+          "2118"
+        ]
+      },
+      {
+        "name": "average_score",
+        "dtype": "float64",
+        "sample_values": [
+          "157.5",
+          "159.21428571428572",
+          "151.28571428571428"
+        ]
+      },
+      {
+        "name": "average_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "4.9375",
+          "6.642857142857143",
+          "5.5"
+        ]
+      },
+      {
+        "name": "average_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "8.3775",
+          "8.403571428571428",
+          "8.574285714285713"
+        ]
+      },
+      {
+        "name": "batting_first_matches",
+        "dtype": "int64",
+        "sample_values": [
+          "9",
+          "8",
+          "6"
+        ]
+      },
+      {
+        "name": "batting_first_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "4",
+          "0",
+          "2"
+        ]
+      },
+      {
+        "name": "chasing_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "5",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "name": "win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "56.25",
+          "14.29",
+          "50.0"
+        ]
+      },
+      {
+        "name": "batting_first_win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "44.44",
+          "0.0",
+          "33.33"
+        ]
+      }
+    ]
+  },
+  "stage4/batter_consistency.csv": {
+    "rows": 382,
+    "cols": [
+      {
+        "name": "batter",
+        "dtype": "str",
+        "sample_values": [
+          "KK Cooper",
+          "Ashutosh Sharma",
+          "Tilak Varma"
+        ]
+      },
+      {
+        "name": "seasons",
+        "dtype": "int64",
+        "sample_values": [
+          "3",
+          "3",
+          "5"
+        ]
+      },
+      {
+        "name": "mean_runs_per_season",
+        "dtype": "float64",
+        "sample_values": [
+          "38.666666666666664",
+          "188.0",
+          "371.6"
+        ]
+      },
+      {
+        "name": "std_runs_per_season",
+        "dtype": "float64",
+        "sample_values": [
+          "0.5773502691896263",
+          "16.522711641858304",
+          "33.208432664008704"
+        ]
+      },
+      {
+        "name": "mean_sr",
+        "dtype": "float64",
+        "sample_values": [
+          "172.42333333333332",
+          "169.9333333333333",
+          "145.802"
+        ]
+      },
+      {
+        "name": "std_sr",
+        "dtype": "float64",
+        "sample_values": [
+          "20.435695078301908",
+          "10.888968423745808",
+          "12.495670050061344"
+        ]
+      },
+      {
+        "name": "runs_cv_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "1.493147247904206",
+          "8.788676405243779",
+          "8.93660728310245"
+        ]
+      }
+    ]
+  },
+  "stage4/bowler_consistency.csv": {
+    "rows": 294,
+    "cols": [
+      {
+        "name": "bowler",
+        "dtype": "str",
+        "sample_values": [
+          "Parvez Rasool",
+          "A Singh",
+          "L Balaji"
+        ]
+      },
+      {
+        "name": "seasons",
+        "dtype": "int64",
+        "sample_values": [
+          "4",
+          "3",
+          "7"
+        ]
+      },
+      {
+        "name": "mean_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "1.0",
+          "9.333333333333334",
+          "10.857142857142858"
+        ]
+      },
+      {
+        "name": "std_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "0.0",
+          "0.5773502691896255",
+          "1.9518001458970664"
+        ]
+      },
+      {
+        "name": "mean_economy",
+        "dtype": "float64",
+        "sample_values": [
+          "7.6925",
+          "7.733333333333333",
+          "8.474285714285715"
+        ]
+      },
+      {
+        "name": "std_economy",
+        "dtype": "float64",
+        "sample_values": [
+          "2.0963042877088878",
+          "2.260029498332562",
+          "1.315368860090293"
+        ]
+      },
+      {
+        "name": "wicket_cv_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "0.0",
+          "6.185895741317416",
+          "17.977106606946663"
+        ]
+      }
+    ]
+  },
+  "stage4/chase_vs_defend_summary.csv": {
+    "rows": 1,
+    "cols": [
+      {
+        "name": "matches_with_winner",
+        "dtype": "int64",
+        "sample_values": [
+          "1234"
+        ]
+      },
+      {
+        "name": "chasing_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "672"
+        ]
+      },
+      {
+        "name": "batting_first_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "562"
+        ]
+      },
+      {
+        "name": "chase_win_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "54.45705024311183"
+        ]
+      },
+      {
+        "name": "bat_first_win_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "45.54294975688817"
+        ]
+      }
+    ]
+  },
+  "stage4/first_innings_score_vs_chase_success.csv": {
+    "rows": 6,
+    "cols": [
+      {
+        "name": "first_innings_score_band",
+        "dtype": "str",
+        "sample_values": [
+          "<130",
+          "130-149",
+          "150-169"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "143",
+          "194",
+          "310"
+        ]
+      },
+      {
+        "name": "chasing_wins",
+        "dtype": "float64",
+        "sample_values": [
+          "121.0",
+          "145.0",
+          "185.0"
+        ]
+      },
+      {
+        "name": "chase_win_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "84.61538461538461",
+          "74.74226804123711",
+          "59.67741935483871"
+        ]
+      }
+    ]
+  },
+  "stage4/phase_performance.csv": {
+    "rows": 3,
+    "cols": [
+      {
+        "name": "phase",
+        "dtype": "str",
+        "sample_values": [
+          "Death",
+          "Middle",
+          "Powerplay"
+        ]
+      },
+      {
+        "name": "innings_phase_records",
+        "dtype": "int64",
+        "sample_values": [
+          "2356",
+          "2468",
+          "2514"
+        ]
+      },
+      {
+        "name": "avg_runs",
+        "dtype": "float64",
+        "sample_values": [
+          "45.3955857385399",
+          "70.61709886547813",
+          "47.93277645186953"
+        ]
+      },
+      {
+        "name": "avg_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "2.2826825127334467",
+          "2.310777957860616",
+          "1.4343675417661097"
+        ]
+      },
+      {
+        "name": "avg_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "10.087181663837013",
+          "7.977658022690438",
+          "8.138114558472553"
+        ]
+      },
+      {
+        "name": "avg_dot_ball_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "28.986078098471985",
+          "31.768233387358183",
+          "46.03203261734288"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "106952",
+          "174283",
+          "120503"
+        ]
+      },
+      {
+        "name": "total_wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "5378",
+          "5703",
+          "3606"
+        ]
+      },
+      {
+        "name": "runs_share_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "26.62232599355799",
+          "43.38225410590982",
+          "29.995419900532188"
+        ]
+      }
+    ]
+  },
+  "stage4/player_batting_leaderboard.csv": {
+    "rows": 738,
+    "cols": [
+      {
+        "name": "batter",
+        "dtype": "str",
+        "sample_values": [
+          "V Kohli",
+          "RG Sharma",
+          "S Dhawan"
+        ]
+      },
+      {
+        "name": "seasons",
+        "dtype": "int64",
+        "sample_values": [
+          "19",
+          "19",
+          "17"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "277",
+          "276",
+          "222"
+        ]
+      },
+      {
+        "name": "runs",
+        "dtype": "int64",
+        "sample_values": [
+          "9346",
+          "7331",
+          "6769"
+        ]
+      },
+      {
+        "name": "balls",
+        "dtype": "int64",
+        "sample_values": [
+          "6930",
+          "5517",
+          "5326"
+        ]
+      },
+      {
+        "name": "fours",
+        "dtype": "int64",
+        "sample_values": [
+          "847",
+          "661",
+          "768"
+        ]
+      },
+      {
+        "name": "sixes",
+        "dtype": "int64",
+        "sample_values": [
+          "317",
+          "324",
+          "153"
+        ]
+      },
+      {
+        "name": "fifties",
+        "dtype": "int64",
+        "sample_values": [
+          "77",
+          "51",
+          "53"
+        ]
+      },
+      {
+        "name": "hundreds",
+        "dtype": "int64",
+        "sample_values": [
+          "9",
+          "2",
+          "2"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "275",
+          "275",
+          "221"
+        ]
+      },
+      {
+        "name": "strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "134.86291486291486",
+          "132.88018850824724",
+          "127.09350356740518"
+        ]
+      },
+      {
+        "name": "dismissals",
+        "dtype": "int64",
+        "sample_values": [
+          "231",
+          "245",
+          "193"
+        ]
+      },
+      {
+        "name": "not_outs",
+        "dtype": "int64",
+        "sample_values": [
+          "46",
+          "31",
+          "29"
+        ]
+      },
+      {
+        "name": "batting_average",
+        "dtype": "float64",
+        "sample_values": [
+          "40.45887445887446",
+          "29.922448979591838",
+          "35.07253886010363"
+        ]
+      }
+    ]
+  },
+  "stage4/player_bowling_leaderboard.csv": {
+    "rows": 577,
+    "cols": [
+      {
+        "name": "bowler",
+        "dtype": "str",
+        "sample_values": [
+          "YS Chahal",
+          "B Kumar",
+          "SP Narine"
+        ]
+      },
+      {
+        "name": "seasons",
+        "dtype": "int64",
+        "sample_values": [
+          "14",
+          "16",
+          "15"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "184",
+          "206",
+          "202"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "184",
+          "206",
+          "200"
+        ]
+      },
+      {
+        "name": "legal_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "3898",
+          "4408",
+          "4571"
+        ]
+      },
+      {
+        "name": "runs_conceded",
+        "dtype": "int64",
+        "sample_values": [
+          "5417",
+          "5913",
+          "5273"
+        ]
+      },
+      {
+        "name": "wickets",
+        "dtype": "int64",
+        "sample_values": [
+          "233",
+          "226",
+          "209"
+        ]
+      },
+      {
+        "name": "dot_balls",
+        "dtype": "int64",
+        "sample_values": [
+          "1381",
+          "2009",
+          "1862"
+        ]
+      },
+      {
+        "name": "maidens",
+        "dtype": "int64",
+        "sample_values": [
+          "4",
+          "14",
+          "3"
+        ]
+      },
+      {
+        "name": "economy",
+        "dtype": "float64",
+        "sample_values": [
+          "8.338122113904566",
+          "8.048548094373865",
+          "6.921461387005031"
+        ]
+      },
+      {
+        "name": "bowling_average",
+        "dtype": "float64",
+        "sample_values": [
+          "23.248927038626608",
+          "26.163716814159294",
+          "25.229665071770334"
+        ]
+      },
+      {
+        "name": "bowling_strike_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "16.72961373390558",
+          "19.504424778761063",
+          "21.870813397129186"
+        ]
+      }
+    ]
+  },
+  "stage4/season_trends.csv": {
+    "rows": 19,
+    "cols": [
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2009",
+          "2009/10"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "116",
+          "114",
+          "120"
+        ]
+      },
+      {
+        "name": "runs",
+        "dtype": "int64",
+        "sample_values": [
+          "17937",
+          "16353",
+          "18883"
+        ]
+      },
+      {
+        "name": "mean_team_win_pct",
+        "dtype": "float64",
+        "sample_values": [
+          "49.1475",
+          "50.2125",
+          "50.44625"
+        ]
+      },
+      {
+        "name": "mean_team_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "8.337577552655677",
+          "7.747804201007326",
+          "8.203403886554621"
+        ]
+      }
+    ]
+  },
+  "stage4/team_batting_first_vs_chasing.csv": {
+    "rows": 19,
+    "cols": [
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Chennai Super Kings",
+          "Deccan Chargers",
+          "Delhi Capitals"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "265",
+          "75",
+          "119"
+        ]
+      },
+      {
+        "name": "wins",
+        "dtype": "int64",
+        "sample_values": [
+          "148",
+          "29",
+          "62"
+        ]
+      },
+      {
+        "name": "bat_first_matches",
+        "dtype": "int64",
+        "sample_values": [
+          "144",
+          "43",
+          "52"
+        ]
+      },
+      {
+        "name": "bat_first_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "74",
+          "18",
+          "26"
+        ]
+      },
+      {
+        "name": "chasing_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "74",
+          "11",
+          "36"
+        ]
+      },
+      {
+        "name": "win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "55.84905660377358",
+          "38.666666666666664",
+          "52.10084033613445"
+        ]
+      }
+    ]
+  },
+  "stage4/team_overall_performance.csv": {
+    "rows": 19,
+    "cols": [
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Mumbai Indians",
+          "Chennai Super Kings",
+          "Kolkata Knight Riders"
+        ]
+      },
+      {
+        "name": "seasons_played",
+        "dtype": "int64",
+        "sample_values": [
+          "19",
+          "17",
+          "19"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "291",
+          "265",
+          "278"
+        ]
+      },
+      {
+        "name": "wins",
+        "dtype": "int64",
+        "sample_values": [
+          "159",
+          "148",
+          "144"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "47641",
+          "43600",
+          "43646"
+        ]
+      },
+      {
+        "name": "avg_score",
+        "dtype": "float64",
+        "sample_values": [
+          "161.24578164918927",
+          "164.4408908661504",
+          "154.42701677837127"
+        ]
+      },
+      {
+        "name": "avg_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "8.554826019810582",
+          "8.49315443236118",
+          "8.49894123175586"
+        ]
+      },
+      {
+        "name": "win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "54.63917525773196",
+          "55.84905660377358",
+          "51.798561151079134"
+        ]
+      }
+    ]
+  },
+  "stage4/team_season_performance.csv": {
+    "rows": 166,
+    "cols": [
+      {
+        "name": "season",
+        "dtype": "str",
+        "sample_values": [
+          "2007/08",
+          "2007/08",
+          "2007/08"
+        ]
+      },
+      {
+        "name": "team",
+        "dtype": "str",
+        "sample_values": [
+          "Rajasthan Royals",
+          "Kings XI Punjab",
+          "Chennai Super Kings"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "16",
+          "15",
+          "16"
+        ]
+      },
+      {
+        "name": "wins",
+        "dtype": "int64",
+        "sample_values": [
+          "13",
+          "10",
+          "9"
+        ]
+      },
+      {
+        "name": "total_runs",
+        "dtype": "int64",
+        "sample_values": [
+          "2601",
+          "2464",
+          "2520"
+        ]
+      },
+      {
+        "name": "average_score",
+        "dtype": "float64",
+        "sample_values": [
+          "162.5625",
+          "164.26666666666668",
+          "157.5"
+        ]
+      },
+      {
+        "name": "average_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "5.5",
+          "5.266666666666667",
+          "4.9375"
+        ]
+      },
+      {
+        "name": "average_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "8.701875",
+          "8.923333333333334",
+          "8.3775"
+        ]
+      },
+      {
+        "name": "batting_first_matches",
+        "dtype": "int64",
+        "sample_values": [
+          "6",
+          "7",
+          "9"
+        ]
+      },
+      {
+        "name": "batting_first_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "4",
+          "4",
+          "4"
+        ]
+      },
+      {
+        "name": "chasing_wins",
+        "dtype": "int64",
+        "sample_values": [
+          "9",
+          "6",
+          "5"
+        ]
+      },
+      {
+        "name": "win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "81.25",
+          "66.67",
+          "56.25"
+        ]
+      },
+      {
+        "name": "batting_first_win_percentage",
+        "dtype": "float64",
+        "sample_values": [
+          "66.67",
+          "57.14",
+          "44.44"
+        ]
+      }
+    ]
+  },
+  "stage4/venue_scoring_insights.csv": {
+    "rows": 53,
+    "cols": [
+      {
+        "name": "venue",
+        "dtype": "str",
+        "sample_values": [
+          "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+          "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+          "Rajiv Gandhi International Stadium, Uppal, Hyderabad"
+        ]
+      },
+      {
+        "name": "innings",
+        "dtype": "int64",
+        "sample_values": [
+          "14",
+          "19",
+          "51"
+        ]
+      },
+      {
+        "name": "matches",
+        "dtype": "int64",
+        "sample_values": [
+          "7",
+          "10",
+          "26"
+        ]
+      },
+      {
+        "name": "avg_innings_score",
+        "dtype": "float64",
+        "sample_values": [
+          "212.92857142857142",
+          "196.8421052631579",
+          "188.33333333333334"
+        ]
+      },
+      {
+        "name": "median_score",
+        "dtype": "float64",
+        "sample_values": [
+          "219.0",
+          "199.0",
+          "185.0"
+        ]
+      },
+      {
+        "name": "avg_run_rate",
+        "dtype": "float64",
+        "sample_values": [
+          "10.829285714285714",
+          "10.291052631578948",
+          "9.822156862745098"
+        ]
+      },
+      {
+        "name": "avg_wickets",
+        "dtype": "float64",
+        "sample_values": [
+          "5.785714285714286",
+          "6.315789473684211",
+          "5.823529411764706"
+        ]
+      },
+      {
+        "name": "avg_sixes",
+        "dtype": "float64",
+        "sample_values": [
+          "12.5",
+          "10.789473684210526",
+          "8.980392156862745"
+        ]
+      },
+      {
+        "name": "avg_fours",
+        "dtype": "float64",
+        "sample_values": [
+          "16.857142857142858",
+          "17.42105263157895",
+          "16.392156862745097"
+        ]
+      }
+    ]
+  }
+}

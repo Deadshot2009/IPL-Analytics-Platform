@@ -1,0 +1,120 @@
+import os
+import json
+
+base = r'C:\Users\asjee\.gemini\antigravity\scratch\ipl-analytics'
+stage2 = os.path.join(base, 'ipl_antigravity_bundle', 'data', 'IPL_Stage2_Integrated_Data')
+stage4 = os.path.join(base, 'ipl_antigravity_bundle', 'data', 'IPL_Stage4_Insights_and_Visualizations', 'IPL_Stage4_Advanced_Insights', 'tables')
+
+with open(os.path.join(base, 'data_summary.json')) as f:
+    d = json.load(f)
+
+md = []
+md.append('# IPL ANALYTICS PLATFORM — COMPREHENSIVE PROJECT DATA DICTIONARY\n\n')
+md.append('**Generated on:** 2026-11-09  \n')
+md.append('**Dataset Source:** Cleaned + Feature-Engineered IPL Datasets (Stage 2 Integrated & Stage 4 Insights)  \n')
+md.append('**Coverage:** 19 IPL Seasons (2007/08 to 2026), 1,243 completed/scheduled matches, 295,732 ball-by-ball deliveries.  \n\n')
+
+md.append('## 1. Overview of Available Datasets\n\n')
+md.append('| Category | Dataset File | Grain / Entity | Rows | Columns | Description |\n')
+md.append('|---|---|---|---|---|---|\n')
+md.append('| Base | `base/matches.csv` | Match grain | 1,243 | 45 | Match metadata, toss, result, innings totals, winner |\n')
+md.append('| Base | `base/deliveries.csv` | Ball / Delivery grain | 295,732 | 41 | Ball-by-ball events, runs, extras, wickets, phase, dots |\n')
+md.append('| Base | `base/batter_scorecard.csv` | Batter-Innings grain | 18,837 | 44 | Individual batting innings performance, milestones, strike rates |\n')
+md.append('| Base | `base/bowler_scorecard.csv` | Bowler-Innings grain | 14,734 | 40 | Individual bowling figures, wickets, economy, dots, maidens |\n')
+md.append('| Base | `base/match_players.csv` | Match-Player grain | 27,909 | 4 | Playing XI records connecting match, team, and player |\n')
+md.append('| Base | `base/people.csv` | Player identity grain | 17,851 | 22 | Master player identifiers, cricinfo/bcci mappings, DOB |\n')
+md.append('| Base | `base/squads.csv` | Squad-Player grain | 257 | 9 | Current squad rosters, roles, batting/bowling styles |\n')
+md.append('| Base | `base/ipl_2026_schedule.csv` | Fixture grain | 74 | 7 | Official schedule fixtures for season 2026 |\n')
+md.append('| Analytics | `analytics/batting_features_player_season.csv` | Player-Season grain | 2,959 | 17 | Season-aggregated batting metrics, avg, SR, 50s, 100s |\n')
+md.append('| Analytics | `analytics/bowling_features_player_season.csv` | Player-Season grain | 2,201 | 15 | Season-aggregated bowling metrics, avg, economy, SR |\n')
+md.append('| Analytics | `analytics/match_innings_features.csv` | Match-Innings grain | 2,514 | 20 | Innings summary, run rates, boundary rates, extras |\n')
+md.append('| Analytics | `analytics/match_phase_features.csv` | Match-Phase grain | 7,338 | 16 | Phase breakdown (powerplay, middle, death) per innings |\n')
+md.append('| Analytics | `analytics/team_match_features.csv` | Team-Match grain | 2,514 | 30 | Team performance per match, chase/defend flags, margin |\n')
+md.append('| Analytics | `analytics/team_season_features.csv` | Team-Season grain | 166 | 13 | Team performance aggregated per season |\n')
+md.append('| Stage 4 | `stage4/player_batting_leaderboard.csv` | Career Batter grain | 738 | 14 | All-time batting career totals, average, SR, 50s, 100s |\n')
+md.append('| Stage 4 | `stage4/player_bowling_leaderboard.csv` | Career Bowler grain | 577 | 12 | All-time bowling career totals, wickets, economy, average |\n')
+md.append('| Stage 4 | `stage4/team_overall_performance.csv` | Team All-Time grain | 19 | 8 | All-time franchise win %, matches, avg score, run rate |\n')
+md.append('| Stage 4 | `stage4/team_season_performance.csv` | Team-Season grain | 166 | 13 | Verified season-by-season performance per team |\n')
+md.append('| Stage 4 | `stage4/venue_scoring_insights.csv` | Venue grain | 53 | 9 | Venue averages, median score, run rates, wickets, sixes |\n')
+md.append('| Stage 4 | `stage4/season_trends.csv` | Season grain | 19 | 5 | Season-over-season progression in run rates, totals |\n')
+md.append('| Stage 4 | `stage4/phase_performance.csv` | Phase grain | 3 | 9 | Macro comparison of Powerplay, Middle, Death overs |\n')
+md.append('| Stage 4 | `stage4/batter_consistency.csv` | Career Consistency | 382 | 7 | Mean runs/season, std dev, coefficient of variation (CV%) |\n')
+md.append('| Stage 4 | `stage4/bowler_consistency.csv` | Career Consistency | 294 | 7 | Mean wickets/season, std dev, CV%, economy stability |\n')
+md.append('| Stage 4 | `stage4/team_batting_first_vs_chasing.csv` | Team Strategy | 19 | 7 | Win rate defending vs chasing per team |\n')
+md.append('| Stage 4 | `stage4/first_innings_score_vs_chase_success.csv`| Score Band | 6 | 4 | Chase win probability by 1st innings score bracket |\n')
+md.append('| Stage 4 | `stage4/chase_vs_defend_summary.csv` | Macro Strategy | 1 | 5 | Overall league-wide toss/chasing win distribution |\n\n')
+
+md.append('## 2. Primary Keys, Foreign Keys, and Entity Relationships\n\n')
+md.append('```mermaid\nerDiagram\n')
+md.append('    MATCHES ||--o{ DELIVERIES : "has match_id"\n')
+md.append('    MATCHES ||--o{ BATTER_SCORECARD : "has match_id"\n')
+md.append('    MATCHES ||--o{ BOWLER_SCORECARD : "has match_id"\n')
+md.append('    MATCHES ||--o{ MATCH_PLAYERS : "features match_id"\n')
+md.append('    MATCHES ||--o{ MATCH_PHASE_FEATURES : "breaks down into match_id"\n')
+md.append('    MATCHES ||--o{ TEAM_MATCH_FEATURES : "records match_id"\n')
+md.append('    MATCH_PLAYERS }o--|| PEOPLE : "identifies player_id"\n')
+md.append('    DELIVERIES }o--|| PEOPLE : "batter/bowler name"\n')
+md.append('    BATTER_SCORECARD }o--|| BATTING_FEATURES_PLAYER_SEASON : "aggregates to batter season"\n')
+md.append('    BOWLER_SCORECARD }o--|| BOWLING_FEATURES_PLAYER_SEASON : "aggregates to bowler season"\n')
+md.append('    TEAM_MATCH_FEATURES }o--|| TEAM_SEASON_FEATURES : "aggregates to team season"\n')
+md.append('```\n\n')
+
+md.append('### Primary Keys by Table:\n')
+md.append('- `matches`: `match_id` (Integer) or `filename` (e.g., `335982.json` / `1473650.json`)\n')
+md.append('- `deliveries`: Composite (`match_id`, `innings`, `over`, `ball`)\n')
+md.append('- `batter_scorecard`: Composite (`match_id`, `innings`, `batter`)\n')
+md.append('- `bowler_scorecard`: Composite (`match_id`, `innings`, `bowler`)\n')
+md.append('- `match_players`: Composite (`filename`, `player_id`)\n')
+md.append('- `people`: `identifier` (String UUID/hash)\n')
+md.append('- `match_phase_features`: Composite (`match_id`, `innings`, `phase`)\n')
+md.append('- `team_match_features`: Composite (`match_id`, `innings`, `team`)\n')
+md.append('- `batting_features_player_season`: Composite (`season`, `batter`)\n')
+md.append('- `bowling_features_player_season`: Composite (`season`, `bowler`)\n')
+md.append('- `team_season_features`: Composite (`season`, `team`)\n\n')
+
+md.append('## 3. Detailed Column Schemas & Data Types\n\n')
+
+for table_key, table_info in d.items():
+    md.append(f'### `{table_key}` ({table_info["rows"]} records)\n\n')
+    md.append('| Column Name | Data Type | Sample Values |\n')
+    md.append('|---|---|---|\n')
+    for col in table_info['cols']:
+        samples = ', '.join([f'`{v}`' for v in col['sample_values'] if v is not None][:2])
+        if not samples:
+            samples = '_null_'
+        md.append(f'| `{col["name"]}` | {col["dtype"]} | {samples} |\n')
+    md.append('\n')
+
+md.append('## 4. Available Statistical Features\n\n')
+md.append('1. **Batting Metrics:** Runs, Balls Faced, Strike Rate, Batting Average (runs / dismissals), Fours, Sixes, Boundary %, Dot Ball % est., 50s, 100s, High Impact 30+ Innings, Entry Phase.\n')
+md.append('2. **Bowling Metrics:** Legal Balls, Overs Bowled, Runs Conceded, Wickets (excluding runouts), Economy Rate, Bowling Average, Bowling Strike Rate, Dot Balls, Maidens, 3-wicket and 4-wicket hauls.\n')
+md.append('3. **Match & Innings Metrics:** Toss winner, toss decision, batting first vs chasing flag, innings runs, run rate, extras (wides, noballs, legbyes, byes), margin of victory (runs/wickets), player of the match.\n')
+md.append('4. **Phase Metrics:** Powerplay (overs 1-6), Middle (overs 7-15), Death (overs 16-20) - runs, wickets, run rate, dot ball %.\n')
+md.append('5. **Venue Metrics:** Match count, average 1st innings score, average 2nd innings score, median score, chase win %, sixes/fours per match.\n')
+md.append('6. **Consistency Metrics:** Coefficient of Variation (CV% = std_dev / mean * 100) for runs and wickets across seasons.\n\n')
+
+md.append('## 5. Missing Information & Limitations\n\n')
+md.append('- **Speeds & Tracking Data:** Ball speed (km/h), pitch map pitch points, wagon wheel coordinates, and release angles are not captured in the Cricsheet JSON/CSV feeds.\n')
+md.append('- **Weather & Pitch Conditions:** Humidity, dew factor, pitch firmness/grass cover are not systematically present in the structured tables.\n')
+md.append('- **Player Photos:** The dataset contains canonical names and IDs (`people.csv`), but no image binary files. Player initials/badges will be rendered cleanly in the UI.\n')
+md.append('- **Team Franchises:** Name variations exist historically (e.g. `Delhi Daredevils` -> `Delhi Capitals`, `Kings XI Punjab` -> `Punjab Kings`, `Royal Challengers Bangalore` -> `Royal Challengers Bengaluru`). The system provides both distinct historical views and consolidated franchise analysis.\n\n')
+
+md.append('## 6. Statistics That Can vs Cannot Be Calculated\n\n')
+md.append('### Can Be Calculated Dynamically:\n')
+md.append('- Complete match scorecards (batting, bowling, fall of wickets, extras, partnerships, over-by-over progression).\n')
+md.append('- Head-to-head match histories and head-to-head win-loss ratios between any two teams.\n')
+md.append('- Exact phase-wise batting and bowling splits (Powerplay, Middle, Death).\n')
+md.append('- Season leaderboards: Orange Cap (Runs), Purple Cap (Wickets), Most Sixes, Highest Strike Rates.\n')
+md.append('- Batter vs Bowler matchups (head-to-head ball-by-ball performance from `deliveries.csv`).\n')
+md.append('- Chasing vs Defending win rates by ground, season, and team.\n')
+md.append('- Player & Team consistency metrics (CV%, standard deviation).\n\n')
+md.append('### Cannot Be Calculated:\n')
+md.append('- Speed radar measurements / maximum delivery speed.\n')
+md.append('- Field placement coordinates (slip, cover, deep midwicket).\n')
+md.append('- Ball swing/seam deviation in degrees or spin RPM.\n\n')
+
+dict_path = os.path.join(base, 'PROJECT_DATA_DICTIONARY.md')
+with open(dict_path, 'w', encoding='utf-8') as f:
+    f.write(''.join(md))
+
+print('Wrote PROJECT_DATA_DICTIONARY.md successfully at', dict_path)
